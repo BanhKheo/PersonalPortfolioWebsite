@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanhKheo's portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/js/main.js">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js"></script>
+    <style>
+        /* 2. This tells the browser *where* to stop when scrolling to an ID.
+            We set it to 81px, which is the height of your navbar,
+            so the section title isn't hidden *under* the fixed nav.
+        */
+        html {
+            scroll-padding-top: 81px; 
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <nav class="flex justify-between items-center p-6 px-12 border-b border-gray-200 fixed top-0 w-full z-50 bg-white">
+        <div class="text-3xl font-black tracking-wide">BanhKheo</div>
+        
+        <ul id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills" >Skills</a></li>
+            <li><a href="#education" >Education</a></li>
+            <li><a href="#experience" >Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home" class="main-container flex items-center p-12 pt-[81px]" style="min-height: 100vh;">
+            <div class="text-content flex-1 pl-12">
+                <h1 class="text-6xl font-black text-gray-800 leading-tight">
+                    Hi There,<br>
+                    I'm Tan Khanh
+                </h1>
+                <p class="text-3xl text-gray-500 my-8">
+                    I am a Backend Dev
+                </p>
+                
+                <a href="#about" class="about-button bg-black text-white py-3 px-8 rounded-full text-lg font-semibold w-fit flex items-center shadow-lg hover:bg-gray-800 transition-all">
+                    About Me <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/khanh.nguyentan.9210256" class="icon-link" ><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/BanhKheo" class="icon-link" ><i class="fab fa-github"></i></a>
+                    <a href="mailto:ngtankhanh2005@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="image-content flex-1 flex justify-center items-center">
+                <div class="w-[450px] h-[450px] bg-yellow-400 rounded-full flex justify-center items-center shadow-2xl">
+                    <img src="https://res.cloudinary.com/dj2yqelqs/image/upload/v1760771011/541365842_1623595861933720_7203278342742739782_n_ctoijs.jpg" alt="Jigar Sable Avatar" class="rounded-full border-8 border-white">
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          HERE IS THE ABOUT SECTION.
+        -->
+
+        <section id="about" class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-user"></i> About Me
+            </h2>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://res.cloudinary.com/dj2yqelqs/image/upload/v1760771011/541365842_1623595861933720_7203278342742739782_n_ctoijs.jpg" alt="Profile Picture">
+                </div>
+
+                <div class="about-text">
+                    <h3>I'm Tan Khanh</h3>
+                    <p class="subtitle">University student</p>
+                    <p>
+                        I am a Full-Stack developer based in HCM, VietNam. I am an Computer Science undergraduate from HCMIU. I am very passionate about
+                        improving my coding skills & developing applications & website. Working for myself to
+                        improve my skills. Love to build full-Stack clones.
+                    </p>
+                    <p>
+                        <strong class="info-label">Email :</strong> ngtankhanh2005@gmail.com
+                    </p>
+                    <p>
+                        <strong class="info-label">Place :</strong> HCM, VietNam
+                    </p>
+
+                    <a href="#" class="resume-button">Resume &gt;</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="py-20 px-4 md:px-12" style="background-color: #0d0d2b;">
+            <!-- Unique Title (Tailwind) -->
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-black text-center mb-12 text-white">
+                    SKILLS & <span class="text-yellow-300">Abilities</span>
+                </h2>
+            </div>
+
+            <!-- Re-usable cards (Custom CSS) -->
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <!-- Category 1: Languages and Databases -->
+                <div class="skill-category-box">
+                    <h3 class="skill-category-title">Languages and Databases</h3>
+                    <div class="skill-logos">
+                        <img src="https://images.viblo.asia/d9efa478-09c2-42a5-b05e-58e5d8634365.png" alt="Python" title="Python">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt="Java" title="Java">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" title="HTML5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS3" title="CSS3">
+                        <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" title="MySQL">
+                        <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" title="PostgreSQL">
+                        <img src="https://teky.edu.vn/blog/wp-content/uploads/2021/08/Cach-su-dung-Mongodb-nhu-the-nao.jpg" alt="MongoDB" title="MongoDB">
+                    </div>
+                </div>
+
+                <!-- Category 2: Frameworks -->
+                <div class="skill-category-box">
+                    <h3 class="skill-category-title">Frameworks</h3>
+                    <div class="skill-logos">
+                        <!-- Placeholder for the grayed-out 'a' logo -->
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-icon.png" alt="Android" title="Android">
+                        <img src="https://images.viblo.asia/1a93ce50-73b2-4ab6-a71a-b8a29840214a.png" alt="Node.js" title="Node.js">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdylODRwIQQjS7WKrCXU39C978mVDIni6Bg&s" alt="Bootstrap" title="Bootstrap">
+                    </div>
+                </div>
+
+                <!-- Category 3: Tools -->
+                <div class="skill-category-box">
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skill-logos">
+                        <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" title="Git">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tvx2BFjpYmfiIBLV25XIfVZy4KhCYFLB7w&s" alt="GitHub" title="GitHub">
+                        <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud" title="Google Cloud">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          HERE IS THE EDUCATION SECTION.
+        -->
+        <section id="education" class="min-h-screen p-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+
+                <h2 class="text-4xl md:text-5xl font-black text-center text-black-700">
+                    <i class="fas fa-graduation-cap mr-2"></i>My Education
+                </h2>
+                <p class="text-center text-gray-500 mt-2 mb-12 text-lg">
+                    Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
+                </p>
+
+                <div class="education-card">
+                    <img src="https://studyinchinas.com/wp-content/uploads/2019/05/Nanjing-University-768x385.jpg" alt="Zeal Institute" class="w-full md:w-80 rounded-lg shadow-md mb-4 md:mb-0">
+                    <div class="flex-1 md:ml-8">
+                        <h3 class="education-title">PhD Of Engineering In Computer Science & Technology</h3>
+                        <p class="text-gray-600 mt-1">Nanjing University | NJU</p>
+                        <p class="education-status-pursuing mt-2">2027-2029 | Dream</p>
+                    </div>
+                </div>
+        
+
+
+                <div class="education-card">
+                    <img src="https://dean1665.vn/uploads/school/dhqt-dhqg_hcm.jpg" alt="Shri L.G. Haria School" class="w-full md:w-80 rounded-lg shadow-md mb-4 md:mb-0">
+                    <div class="flex-1 md:ml-8">
+                        <h3 class="education-title">HSC Science | Informatic Practices</h3>
+                        <p class="text-gray-600 mt-1">Shri L.G. Haria Multipurpose School | CBSE</p>
+                        <p class="education-status-completed mt-2">2018-2020 | Pursuing</p>
+                    </div>
+                </div>
+        
+                
+                
+        
+            </div>
+        </section>
+
+
+        <!-- 
+          HERE IS THE EXPERIENCE SECTION.
+        -->
+        <section id="experience" class="min-h-screen p-12">
+            
+            <!-- UNIQUE STYLES (TAILWIND) -->
+            <h2 class="text-4xl md:text-5xl font-black text-center text-gray-800 mb-12">
+                <i class="fas fa-briefcase mr-2"></i>Experience
+            </h2>
+
+            <!-- RE-USABLE STYLES (CUSTOM CSS) -->
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <!-- UNIQUE STYLES (TAILWIND) -->
+                        <h3 class="text-xl font-bold">Self Employed</h3>
+                        <p class="font-semibold">Full Stack Developer</p>
+                        <span class="text-sm text-orange-100">Oct 2021 - Present</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold">The Dream Foundation</h3>
+                        <p class="font-semibold">Website Developer | Internship</p>
+                        <span class="text-sm text-orange-100">May 2025 - June 2025</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold">The Dream Foundation</h3>
+                        <p class="font-semibold">Blockchain Technology | Internship</p>
+                        <span class="text-sm text-orange-100">May 2026 - June 2027</span>
+                    </div>
+                </div>
+            </div>
+
+                
+                
+
+
+        </section>
+        
+                <section id="contact" class="min-h-screen p-6 md:p-12 bg-purple-50">
+            <!-- UNIQUE STYLES (TAILWIND) -->
+            <h2 class="text-4xl md:text-5xl font-black text-center black mb-12">
+                <i class="fas fa-headset mr-2"></i>Get In Touch
+            </h2>
+
+            <!-- RE-USABLE STYLES (CUSTOM CSS) -->
+            <div class="contact-card max-w-5xl mx-auto">
+
+                <!-- Left Column - Image (Unique Tailwind) -->
+                <div class="flex-1 flex justify-center items-center p-4">
+                    <img src="https://i.pinimg.com/1200x/cf/fa/12/cffa12b836145e10268fb60b3ac99f57.jpg" alt="Contact Illustration" class="max-w-full h-auto rounded-lg">
+                </div>
+
+                <!-- Right Column - Form -->
+                <div class="flex-1">
+                    <form action="#">
+                        <div class="form-group">
+                            <i class="fas fa-user form-icon"></i>
+                            <input type="text" name="name" placeholder="Name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope form-icon"></i>
+                            <input type="email" name="email" placeholder="Email" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-phone form-icon"></i>
+                            <input type="tel" name="phone" placeholder="Phone" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-comment-dots form-icon" style="top: 1.25rem; transform: translateY(0);"></i>
+                            <textarea name="message" rows="5" placeholder="Message" class="form-input" style="padding-top: 1rem;"></textarea>
+                        </div>
+                        
+                        <!-- Unique Button (Tailwind) -->
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg font-semibold flex items-center justify-center shadow-lg hover:bg-indigo-700 transition-all">
+                            Submit <i class="fas fa-paper-plane ml-3"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-grid">
+            <!-- Column 1: Jigar's Portfolio -->
+            <div class="footer-col">
+                <h3>Tan Khanh's Portfolio</h3>
+                <p>
+                    Thank you for visiting my personal Khanh website. Connect with me over socials.
+                </p>
+                <p class="mt-4">
+                    Keep Rising. 🚀 Connect with me over live chat!
+                </p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i>Experience</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i>+84 764519400</li>
+                    <li><i class="fas fa-envelope"></i>ngtankhanh2005@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>HCM, VIETNAM</li>
+                </ul>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/khanh.nguyentan.9210256" aria-label="LinkedIn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/BanhKheo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ngtankhanh2005@gmail.com" aria-label="Instagram"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            Designed With <span class="text-red-500">❤️</span> By <a href="#">Tan Khanh</a>
+        </div>
+    </footer>
+</body>
+</html>

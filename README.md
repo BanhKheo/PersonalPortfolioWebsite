@@ -54,4 +54,5 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/BanhKheo/BanhKheo.github.io.git
+   git clone [https://github.com/BanhKheo/BanhKheo.github.io.git](https://github.com/BanhKheo/PersonalPortfolioWebsite.git)
+

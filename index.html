@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js"></script>
     <style>
-        /* 2. This tells the browser *where* to stop when scrolling to an ID.
-            We set it to 81px, which is the height of your navbar,
-            so the section title isn't hidden *under* the fixed nav.
-        */
 
         html {
             scroll-padding-top: 81px; 
@@ -37,7 +33,6 @@
             <li><a href="#skills" >Skills</a></li>
             <li><a href="#education" >Education</a></li>
             <li><a href="#experience" >Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -100,7 +95,7 @@
                         <strong class="info-label">Place :</strong> HCM, VietNam
                     </p>
 
-                    <a href="#" class="resume-button">Resume &gt;</a>
+                    <a href="./assets/resume/resume.pdf" class="resume-button">Resume &gt;</a>
                 </div>
             </div>
         </section>
@@ -200,104 +195,88 @@
         </section>
 
 
-        <!-- 
-          HERE IS THE EXPERIENCE SECTION.
+            <!-- 
+        EXPERIENCE & ACHIEVEMENTS CARD SECTION
         -->
-        <section id="experience" class="min-h-screen p-12">
+        <section id="experience" class="min-h-screen p-12 bg-gray-50">
             
-            <h2 class="text-4xl md:text-5xl font-black text-center text-gray-800 mb-12">
-                <i class="fas fa-star mr-2"></i>Experience 
+            <h2 class="text-4xl md:text-5xl font-black text-center text-gray-800 mb-16">
+                <i class="fas fa-rocket mr-3"></i>Experience & Achievements
             </h2>
 
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-               
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-laptop-code"></i>
+                <!-- Card 1: Independent Study -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-orange-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="bg-orange-100 p-3 rounded-lg text-orange-600">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <span class="text-xs font-bold bg-gray-100 px-3 py-1 rounded-full text-gray-500 uppercase">Oct 2023 - Present</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="text-xl font-bold">Independent Study</h3>
-                        <p class="font-semibold text-orange-200">Full Stack Developer</p>
-                        <span class="text-sm text-orange-100">Oct 2023 - Present</span>
-                        <p class="text-sm mt-2 opacity-90">Self-educated in modern web technologies including React (Vite), TypeScript, and Docker to build production-ready applications.</p>
-                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Independent Study</h3>
+                    <p class="font-semibold text-orange-600 mb-3">Full Stack Developer</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Dedicated to self-educating in modern web technologies including React (Vite), TypeScript, and Docker. Focused on building production-ready applications and full-stack clones to master complex system architectures.
+                    </p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-language"></i>
+                <!-- Card 2: Math and English Tutor -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-blue-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                        </div>
+                        <span class="text-xs font-bold bg-gray-100 px-3 py-1 rounded-full text-gray-500 uppercase">July 2024 - Present</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="text-xl font-bold">ABC English Center</h3>
-                        <p class="font-semibold text-orange-200">English Tutor (IELTS 6.5)</p>
-                        <span class="text-sm text-orange-100">July 2024 - Present</span>
-                        <p class="text-sm mt-2 opacity-90">Helping students master English through structured lessons and real-world communication strategies.</p>
-                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">ABC English Center</h3>
+                    <p class="font-semibold text-blue-600 mb-3">Math and English Tutor (IELTS 6.5)</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Helping students master Math and English through structured lessons and logical problem-solving strategies. Leveraged IELTS 6.5 proficiency to improve student communication skills in an academic environment.
+                    </p>
                 </div>
 
+                <!-- Card 3: Academic Scholarships -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-yellow-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600">
+                            <i class="fas fa-award fa-2x"></i>
+                        </div>
+                        <span class="text-xs font-bold bg-gray-100 px-3 py-1 rounded-full text-gray-500 uppercase">2025 - 2026</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Academic Excellence</h3>
+                    <p class="font-semibold text-yellow-600 mb-3">International University - VNU HCMC</p>
+                    <ul class="text-gray-600 text-sm space-y-2 list-none">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                            <span>Scholarship Semester 2 (2024-2025) | GPA: 8.78/10.0</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                            <span>Scholarship Semester 1 (2025-2026) | GPA: 8.5/10.0</span>
+                        </li>
+                    </ul>
+                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-users-cog"></i>
+                <!-- Card 4: IUROADMAP -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-purple-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg text-purple-600">
+                            <i class="fas fa-users-cog fa-2x"></i>
+                        </div>
+                        <span class="text-xs font-bold bg-gray-100 px-3 py-1 rounded-full text-gray-500 uppercase">Dec 2025 - Present</span>
                     </div>
-                    <div class="timeline-content">
-                        <h3 class="text-xl font-bold">IUROADMAP </h3>
-                        <p class="font-semibold text-orange-200">Scrum Master & Backend Lead</p>
-                        <span class="text-sm text-orange-100">Dec 2025 - Present</span>
-                        <p class="text-sm mt-2 opacity-90">Leading Agile ceremonies and managing microservices architecture using NestJS and Azure DevOps.</p>
-                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">IUROADMAP</h3>
+                    <p class="font-semibold text-purple-600 mb-3">Scrum Master & Backend Lead</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Facilitating Agile ceremonies and architecting microservices with NestJS, PostgreSQL, and Azure DevOps. Leading a engineering group to bridge the gap between academic planning and career mastering.
+                    </p>
                 </div>
 
             </div>
         </section>
         
-                <section id="contact" class="min-h-screen p-6 md:p-12 bg-purple-50">
-            <!-- UNIQUE STYLES (TAILWIND) -->
-            <h2 class="text-4xl md:text-5xl font-black text-center black mb-12">
-                <i class="fas fa-headset mr-2"></i>Get In Touch
-            </h2>
-
-            <!-- RE-USABLE STYLES (CUSTOM CSS) -->
-            <div class="contact-card max-w-5xl mx-auto">
-
-                <!-- Left Column - Image (Unique Tailwind) -->
-                <div class="flex-1 flex justify-center items-center p-4">
-                    <img src="https://i.pinimg.com/1200x/cf/fa/12/cffa12b836145e10268fb60b3ac99f57.jpg" alt="Contact Illustration" class="max-w-full h-auto rounded-lg">
-                </div>
-
-                <!-- Right Column - Form -->
-                <div class="flex-1">
-                    <form action="#">
-                        <div class="form-group">
-                            <i class="fas fa-user form-icon"></i>
-                            <input type="text" name="name" placeholder="Name" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-envelope form-icon"></i>
-                            <input type="email" name="email" placeholder="Email" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-phone form-icon"></i>
-                            <input type="tel" name="phone" placeholder="Phone" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-comment-dots form-icon" style="top: 1.25rem; transform: translateY(0);"></i>
-                            <textarea name="message" rows="5" placeholder="Message" class="form-input" style="padding-top: 1rem;"></textarea>
-                        </div>
-                        
-                        <!-- Unique Button (Tailwind) -->
-                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg font-semibold flex items-center justify-center shadow-lg hover:bg-indigo-700 transition-all">
-                            Submit <i class="fas fa-paper-plane ml-3"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-
+            
     </main>
 
     <footer class="footer-container">
@@ -334,7 +313,7 @@
                     <li><i class="fas fa-map-marker-alt"></i>HCM, VIETNAM</li>
                 </ul>
                 <div class="footer-social-links">
-                    <a href="https://www.linkedin.com/in/tan-khanh-nguyen-9210256" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/kh%C3%A1nh-nguy%E1%BB%85n-t%E1%BA%A5n-2a2887391/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/BanhKheo" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="mailto:ngtankhanh2005@gmail.com" aria-label="Instagram"><i class="fas fa-envelope"></i></a>
                 </div>
